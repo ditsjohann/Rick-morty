@@ -1,0 +1,6 @@
+{
+  "parent": "mayhem:block/interdimensional_tv",
+  "textures": {
+    "screen": "mayhem:block/tv_screen_2"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:portal_gun",
+      "count": 1
+    },
+    "title": "Hole Punch",
+    "description": "Build a Portal Gun",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gun": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mayhem:portal_gun"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "gun"
+    ]
+  ],
+  "parent": "mayhem:root"
+}

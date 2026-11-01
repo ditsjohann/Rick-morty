@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mayhem:watcher_eye"
+    },
+    {
+      "item": "mayhem:watcher_eye"
+    },
+    {
+      "item": "mayhem:watcher_eye"
+    },
+    {
+      "item": "mayhem:watcher_eye"
+    },
+    {
+      "item": "mayhem:raw_mystery_meat"
+    },
+    {
+      "item": "mayhem:dark_matter"
+    },
+    {
+      "item": "minecraft:bone"
+    }
+  ],
+  "result": {
+    "id": "mayhem:eye_bait",
+    "count": 1
+  }
+}

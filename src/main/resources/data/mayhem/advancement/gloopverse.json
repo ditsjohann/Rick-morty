@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:gloop_block",
+      "count": 1
+    },
+    "title": "Gloop, There It Is",
+    "description": "Visit the Gloopverse",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "dim": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "mayhem:gloopverse"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dim"
+    ]
+  ],
+  "parent": "mayhem:portal_gun"
+}

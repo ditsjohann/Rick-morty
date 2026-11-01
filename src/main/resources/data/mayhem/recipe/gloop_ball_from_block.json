@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mayhem:gloop_block"
+    }
+  ],
+  "result": {
+    "id": "mayhem:gloop_ball",
+    "count": 4
+  }
+}

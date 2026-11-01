@@ -1,0 +1,76 @@
+{
+  "has_precipitation": false,
+  "temperature": 1.0,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 2097168,
+    "fog_color": 3803706,
+    "water_color": 6946848,
+    "water_fog_color": 2752528,
+    "grass_color": 12730458,
+    "foliage_color": 12730458,
+    "particle": {
+      "options": {
+        "type": "minecraft:crimson_spore"
+      },
+      "probability": 0.03
+    },
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "ambient_sound": "minecraft:ambient.soul_sand_valley.loop"
+  },
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [
+      {
+        "type": "mayhem:meat_crawler",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "mayhem:watcher",
+        "weight": 45,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "mayhem:thought_leech",
+        "weight": 25,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [
+      "mayhem:flesh_tendril"
+    ],
+    [],
+    [
+      "mayhem:ore_gristle_blob",
+      "mayhem:ore_dark_matter",
+      "mayhem:ore_eye_flesh"
+    ],
+    [],
+    [],
+    [],
+    []
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:eye_bait",
+      "count": 1
+    },
+    "title": "Here, Eyey Eyey",
+    "description": "Craft Eye Bait",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "e": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mayhem:eye_bait"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "e"
+    ]
+  ],
+  "parent": "mayhem:dark_matter"
+}

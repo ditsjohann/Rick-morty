@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:dark_matter",
+      "count": 1
+    },
+    "title": "It Stares Back",
+    "description": "Obtain Dark Matter",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "dm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mayhem:dark_matter"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dm"
+    ]
+  ],
+  "parent": "mayhem:meatverse"
+}

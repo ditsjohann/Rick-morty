@@ -22,12 +22,16 @@ public class FleshTendrilFeature extends Feature<DefaultFeatureConfig> {
         StructureWorldAccess world = ctx.getWorld();
         Random random = ctx.getRandom();
         BlockPos origin = ctx.getOrigin();
-        // Find a floor: air with solid below.
+        // Find a floor: an air block with something solid beneath it, scanning upwards.
         BlockPos.Mutable m = origin.mutableCopy();
-        int guard = 0;
-        while (!world.isAir(m) && guard++ < 40) m.move(0, 1, 0);
-        while (world.isAir(m.down()) && guard++ < 80 && m.getY() > world.getBottomY() + 2) m.move(0, -1, 0);
-        if (!world.isAir(m) || world.isAir(m.down())) return false;
+        boolean found = false;
+        for (int i = 0; i < 200 && m.getY() < world.getTopY() - 2; i++, m.move(0, 1, 0)) {
+            if (world.isAir(m) && !world.isAir(m.down())) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) return false;
         BlockPos floor = m.toImmutable();
         int maxH = 10 + random.nextInt(22);
         float phase = random.nextFloat() * 6.28f;

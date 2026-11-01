@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mayhem:dark_matter_block"
+    }
+  ],
+  "result": {
+    "id": "mayhem:dark_matter",
+    "count": 9
+  }
+}

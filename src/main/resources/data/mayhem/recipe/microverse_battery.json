@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IRI",
+    "DFD",
+    "IRI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "D": {
+      "item": "mayhem:dark_matter"
+    },
+    "F": {
+      "item": "mayhem:flux_block"
+    }
+  },
+  "result": {
+    "id": "mayhem:microverse_battery",
+    "count": 1
+  }
+}

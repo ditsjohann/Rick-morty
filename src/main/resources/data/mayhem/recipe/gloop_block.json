@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "mayhem:gloop_ball"
+    }
+  },
+  "result": {
+    "id": "mayhem:gloop_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mayhem:dark_matter"
+    }
+  },
+  "result": {
+    "id": "mayhem:dark_matter_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "mayhem:deepslate_flux_crystal_ore"
+  },
+  "result": {
+    "id": "mayhem:flux_crystal"
+  },
+  "experience": 1.0,
+  "cookingtime": 100
+}

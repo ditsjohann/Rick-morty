@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": {
+    "item": "mayhem:raw_mystery_meat"
+  },
+  "result": {
+    "id": "mayhem:cooked_mystery_meat"
+  },
+  "experience": 0.35,
+  "cookingtime": 600
+}

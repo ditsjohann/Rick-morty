@@ -17,6 +17,17 @@ loom {
     splitEnvironmentSourceSets()
     accessWidenerPath = file("src/main/resources/mayhem.accesswidener")
 
+    runs {
+        // Dev-only: boots straight into the "autotest" world and screenshots staged scenes (see AutoTest.java).
+        autotest {
+            client()
+            name "Autotest Client"
+            vmArg "-Dmayhem.autotest=true"
+            programArgs "--quickPlaySingleplayer", "autotest", "--width", "960", "--height", "540"
+            runDir "run"
+        }
+    }
+
     mods {
         "mayhem" {
             sourceSet sourceSets.main
@@ -53,4 +64,9 @@ jar {
     from("LICENSE") {
         rename { "${it}_${project.base.archivesName.get()}" }
     }
+}
+
+// Allow piping console commands into the dev server (used for automated smoke tests).
+tasks.matching { it.name == 'runServer' }.configureEach {
+    standardInput = System.in
 }

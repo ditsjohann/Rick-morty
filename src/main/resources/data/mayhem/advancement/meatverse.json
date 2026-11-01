@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:flesh_block",
+      "count": 1
+    },
+    "title": "Meat and Greet",
+    "description": "Visit the Meatverse. Try not to think about it.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "dim": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "mayhem:meatverse"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dim"
+    ]
+  ],
+  "parent": "mayhem:portal_gun"
+}

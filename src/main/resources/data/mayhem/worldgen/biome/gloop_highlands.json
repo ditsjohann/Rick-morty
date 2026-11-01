@@ -1,0 +1,77 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 16743129,
+    "fog_color": 11898111,
+    "water_color": 4186367,
+    "water_fog_color": 1731200,
+    "grass_color": 8191834,
+    "foliage_color": 8191834,
+    "particle": {
+      "options": {
+        "type": "minecraft:warped_spore"
+      },
+      "probability": 0.006
+    },
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    }
+  },
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "mayhem:glooper",
+        "weight": 12,
+        "minCount": 2,
+        "maxCount": 4
+      },
+      {
+        "type": "mayhem:zorp",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
+        "type": "mayhem:thought_leech",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [
+      "mayhem:flux_spire"
+    ],
+    [],
+    [
+      "mayhem:ore_gloop_in_gloopstone"
+    ],
+    [],
+    [],
+    [
+      "mayhem:patch_wobble_shroom",
+      "mayhem:patch_flux_cluster"
+    ],
+    []
+  ]
+}

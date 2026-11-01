@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " L ",
+    "DPD",
+    " B "
+  ],
+  "key": {
+    "L": {
+      "item": "mayhem:omni_lens"
+    },
+    "D": {
+      "item": "mayhem:dark_matter_block"
+    },
+    "P": {
+      "item": "mayhem:portal_gun"
+    },
+    "B": {
+      "item": "mayhem:microverse_battery"
+    }
+  },
+  "result": {
+    "id": "mayhem:omni_portal_gun",
+    "count": 1
+  }
+}

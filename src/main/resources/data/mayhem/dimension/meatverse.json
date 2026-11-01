@@ -1,0 +1,16 @@
+{
+  "type": "mayhem:meatverse",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "mayhem:meatverse",
+    "biome_source": {
+      "type": "minecraft:checkerboard",
+      "biomes": [
+        "mayhem:flesh_caverns",
+        "mayhem:flesh_caverns",
+        "mayhem:eye_gardens"
+      ],
+      "scale": 2
+    }
+  }
+}

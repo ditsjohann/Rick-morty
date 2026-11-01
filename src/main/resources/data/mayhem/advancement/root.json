@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:flux_crystal",
+      "count": 1
+    },
+    "title": "Multiverse Mayhem",
+    "description": "Reality is optional. Dig deep for Flux Crystals.",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "mayhem:textures/block/gloopstone_bricks.png"
+  },
+  "criteria": {
+    "flux": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mayhem:flux_crystal"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "flux"
+    ]
+  ]
+}

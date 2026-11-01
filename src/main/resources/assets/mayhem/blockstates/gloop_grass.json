@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "mayhem:block/gloop_grass"
+      },
+      {
+        "model": "mayhem:block/gloop_grass",
+        "y": 90
+      },
+      {
+        "model": "mayhem:block/gloop_grass",
+        "y": 180
+      },
+      {
+        "model": "mayhem:block/gloop_grass",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "LIL",
+    "G G"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:lime_stained_glass_pane"
+    }
+  },
+  "result": {
+    "id": "mayhem:lab_goggles",
+    "count": 1
+  }
+}

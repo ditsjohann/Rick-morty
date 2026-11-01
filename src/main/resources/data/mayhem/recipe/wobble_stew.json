@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "mayhem:wobble_shroom"
+    },
+    {
+      "item": "mayhem:wobble_shroom"
+    },
+    {
+      "item": "mayhem:gloop_ball"
+    }
+  ],
+  "result": {
+    "id": "mayhem:wobble_stew",
+    "count": 1
+  }
+}

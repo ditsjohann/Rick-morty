@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:pocket_black_hole",
+      "count": 1
+    },
+    "title": "Pocket Physics",
+    "description": "Obtain a Pocket Black Hole",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "b": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mayhem:pocket_black_hole"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "b"
+    ]
+  ],
+  "parent": "mayhem:dark_matter"
+}

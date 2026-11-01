@@ -37,7 +37,7 @@ public class CrashedSaucerFeature extends Feature<DefaultFeatureConfig> {
         Random random = ctx.getRandom();
         BlockPos origin = world.getTopPosition(Heightmap.Type.WORLD_SURFACE_WG, ctx.getOrigin());
         BlockState ground = world.getBlockState(origin.down());
-        if (!ground.isIn(BlockTags.DIRT) && !ground.isIn(BlockTags.SAND) && !ground.isOf(Blocks.STONE)) return false;
+        if (!ground.isSolidBlock(world, origin.down()) || ground.isIn(BlockTags.LEAVES) || !world.getFluidState(origin).isEmpty()) return false;
 
         double tiltX = (random.nextDouble() - 0.5) * 0.6;
         double tiltZ = (random.nextDouble() - 0.5) * 0.6;

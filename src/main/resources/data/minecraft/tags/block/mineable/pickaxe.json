@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "mayhem:flux_crystal_ore",
+    "mayhem:deepslate_flux_crystal_ore",
+    "mayhem:flux_block",
+    "mayhem:dark_matter_block",
+    "mayhem:gloopstone",
+    "mayhem:gloopstone_bricks",
+    "mayhem:gristle",
+    "mayhem:dark_matter_ore",
+    "mayhem:landing_pad",
+    "mayhem:flux_cluster"
+  ]
+}

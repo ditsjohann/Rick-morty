@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:dimensional_permit",
+      "count": 1
+    },
+    "title": "Fully Licensed",
+    "description": "Obtain a Dimensional Permit",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "p": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mayhem:dimensional_permit"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "p"
+    ]
+  ],
+  "parent": "mayhem:customs"
+}

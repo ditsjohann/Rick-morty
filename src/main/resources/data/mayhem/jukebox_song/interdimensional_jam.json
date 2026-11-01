@@ -1,0 +1,8 @@
+{
+  "sound_event": "mayhem:music_disc.interdimensional_jam",
+  "description": {
+    "translate": "jukebox_song.mayhem.interdimensional_jam"
+  },
+  "length_in_seconds": 62.0,
+  "comparator_output": 13
+}

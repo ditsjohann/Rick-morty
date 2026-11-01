@@ -32,6 +32,7 @@ public class MultiverseMayhemClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        com.ditsjohann.mayhem.client.dev.AutoTest.init();
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLOOP_BLOCK, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WOBBLE_SHROOM, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FLUX_CLUSTER, RenderLayer.getCutout());

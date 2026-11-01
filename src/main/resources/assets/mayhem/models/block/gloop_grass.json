@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "mayhem:block/gloop_grass_top",
+    "side": "mayhem:block/gloop_grass_side",
+    "bottom": "mayhem:block/gloopstone"
+  }
+}

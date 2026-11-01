@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:toaster_core",
+      "count": 1
+    },
+    "title": "Toast of the Town",
+    "description": "Build a Toaster Core",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "t": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mayhem:toaster_core"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "t"
+    ]
+  ],
+  "parent": "mayhem:root"
+}

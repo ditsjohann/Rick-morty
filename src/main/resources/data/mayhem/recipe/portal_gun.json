@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "FGP",
+    "IDI",
+    "I  "
+  ],
+  "key": {
+    "F": {
+      "item": "mayhem:flux_crystal"
+    },
+    "G": {
+      "item": "minecraft:lime_stained_glass"
+    },
+    "P": {
+      "item": "mayhem:portal_fluid"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "id": "mayhem:portal_gun",
+    "count": 1
+  }
+}

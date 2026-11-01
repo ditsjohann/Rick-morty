@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:stun_baton",
+      "count": 1
+    },
+    "title": "Paperwork",
+    "description": "Defeat an Interdimensional Customs Agent",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mayhem:customs_agent"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill"
+    ]
+  ],
+  "parent": "mayhem:portal_gun"
+}

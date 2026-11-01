@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:omni_portal_gun",
+      "count": 1
+    },
+    "title": "Omnipresent",
+    "description": "Build the Omni Portal Gun",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "g": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mayhem:omni_portal_gun"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "g"
+    ]
+  ],
+  "parent": "mayhem:omni_eye",
+  "rewards": {
+    "experience": 100
+  }
+}

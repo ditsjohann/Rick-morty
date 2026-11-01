@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:omni_lens",
+      "count": 1
+    },
+    "title": "I See What You Did There",
+    "description": "Defeat the Omni-Eye",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "k": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mayhem:omni_eye"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "k"
+    ]
+  ],
+  "parent": "mayhem:eye_bait",
+  "rewards": {
+    "experience": 200
+  }
+}

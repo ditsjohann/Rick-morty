@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "mayhem:dark_matter_ore"
+  },
+  "result": {
+    "id": "mayhem:dark_matter"
+  },
+  "experience": 2.0,
+  "cookingtime": 200
+}

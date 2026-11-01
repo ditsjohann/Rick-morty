@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  F",
+    "IAG",
+    "I  "
+  ],
+  "key": {
+    "F": {
+      "item": "mayhem:flux_crystal"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "G": {
+      "item": "minecraft:lime_stained_glass"
+    }
+  },
+  "result": {
+    "id": "mayhem:size_ray",
+    "count": 1
+  }
+}

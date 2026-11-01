@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "FF",
+    "FS",
+    " S"
+  ],
+  "key": {
+    "F": {
+      "item": "mayhem:flux_crystal"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "mayhem:flux_axe",
+    "count": 1
+  }
+}

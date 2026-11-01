@@ -1,0 +1,331 @@
+{
+  "item.portal_gun.fire": {
+    "sounds": [
+      {
+        "name": "mayhem:portal_gun_fire"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.item.portal_gun.fire"
+  },
+  "item.portal_gun.empty": {
+    "sounds": [
+      {
+        "name": "mayhem:portal_gun_empty"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.item.portal_gun.empty"
+  },
+  "item.portal_gun.mode": {
+    "sounds": [
+      {
+        "name": "mayhem:portal_gun_mode"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.item.portal_gun.mode"
+  },
+  "entity.portal.open": {
+    "sounds": [
+      {
+        "name": "mayhem:portal_open"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.portal.open"
+  },
+  "entity.portal.close": {
+    "sounds": [
+      {
+        "name": "mayhem:portal_close"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.portal.close"
+  },
+  "entity.portal.travel": {
+    "sounds": [
+      {
+        "name": "mayhem:portal_travel"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.portal.travel"
+  },
+  "item.plasma_blaster.fire": {
+    "sounds": [
+      {
+        "name": "mayhem:plasma_shot"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.item.plasma_blaster.fire"
+  },
+  "item.size_ray.zap": {
+    "sounds": [
+      {
+        "name": "mayhem:size_ray"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.item.size_ray.zap"
+  },
+  "item.swapper.swap": {
+    "sounds": [
+      {
+        "name": "mayhem:swapper"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.item.swapper.swap"
+  },
+  "entity.black_hole.hum": {
+    "sounds": [
+      {
+        "name": "mayhem:black_hole_hum"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.black_hole.hum"
+  },
+  "entity.black_hole.collapse": {
+    "sounds": [
+      {
+        "name": "mayhem:black_hole_collapse"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.black_hole.collapse"
+  },
+  "item.mystery_jar.open": {
+    "sounds": [
+      {
+        "name": "mayhem:jar_open"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.item.mystery_jar.open"
+  },
+  "block.interdimensional_tv.channel": {
+    "sounds": [
+      {
+        "name": "mayhem:tv_channel"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.block.interdimensional_tv.channel"
+  },
+  "entity.glooper.ambient": {
+    "sounds": [
+      {
+        "name": "mayhem:glooper_ambient1"
+      },
+      {
+        "name": "mayhem:glooper_ambient2"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.glooper.ambient"
+  },
+  "entity.glooper.hurt": {
+    "sounds": [
+      {
+        "name": "mayhem:glooper_hurt"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.glooper.hurt"
+  },
+  "entity.glooper.death": {
+    "sounds": [
+      {
+        "name": "mayhem:glooper_death"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.glooper.death"
+  },
+  "entity.meat_crawler.ambient": {
+    "sounds": [
+      {
+        "name": "mayhem:crawler_ambient"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.meat_crawler.ambient"
+  },
+  "entity.meat_crawler.hurt": {
+    "sounds": [
+      {
+        "name": "mayhem:crawler_hurt"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.meat_crawler.hurt"
+  },
+  "entity.meat_crawler.death": {
+    "sounds": [
+      {
+        "name": "mayhem:crawler_death"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.meat_crawler.death"
+  },
+  "entity.watcher.ambient": {
+    "sounds": [
+      {
+        "name": "mayhem:watcher_ambient"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.watcher.ambient"
+  },
+  "entity.watcher.hurt": {
+    "sounds": [
+      {
+        "name": "mayhem:watcher_hurt"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.watcher.hurt"
+  },
+  "entity.watcher.death": {
+    "sounds": [
+      {
+        "name": "mayhem:watcher_death"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.watcher.death"
+  },
+  "entity.watcher.shoot": {
+    "sounds": [
+      {
+        "name": "mayhem:watcher_shoot"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.watcher.shoot"
+  },
+  "entity.customs_agent.ambient": {
+    "sounds": [
+      {
+        "name": "mayhem:agent_ambient1"
+      },
+      {
+        "name": "mayhem:agent_ambient2"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.customs_agent.ambient"
+  },
+  "entity.customs_agent.hurt": {
+    "sounds": [
+      {
+        "name": "mayhem:agent_hurt"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.customs_agent.hurt"
+  },
+  "entity.customs_agent.death": {
+    "sounds": [
+      {
+        "name": "mayhem:agent_death"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.customs_agent.death"
+  },
+  "entity.customs_agent.alert": {
+    "sounds": [
+      {
+        "name": "mayhem:agent_alert"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.customs_agent.alert"
+  },
+  "entity.zorp.ambient": {
+    "sounds": [
+      {
+        "name": "mayhem:zorp_ambient1"
+      },
+      {
+        "name": "mayhem:zorp_ambient2"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.zorp.ambient"
+  },
+  "entity.zorp.yes": {
+    "sounds": [
+      {
+        "name": "mayhem:zorp_yes"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.zorp.yes"
+  },
+  "entity.zorp.no": {
+    "sounds": [
+      {
+        "name": "mayhem:zorp_no"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.zorp.no"
+  },
+  "entity.defense_toaster.pop": {
+    "sounds": [
+      {
+        "name": "mayhem:toaster_pop"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.defense_toaster.pop"
+  },
+  "entity.defense_toaster.ambient": {
+    "sounds": [
+      {
+        "name": "mayhem:toaster_ambient"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.defense_toaster.ambient"
+  },
+  "entity.defense_toaster.hurt": {
+    "sounds": [
+      {
+        "name": "mayhem:toaster_hurt"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.defense_toaster.hurt"
+  },
+  "entity.thought_leech.attach": {
+    "sounds": [
+      {
+        "name": "mayhem:leech_attach"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.thought_leech.attach"
+  },
+  "entity.thought_leech.ambient": {
+    "sounds": [
+      {
+        "name": "mayhem:leech_ambient"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.thought_leech.ambient"
+  },
+  "entity.omni_eye.roar": {
+    "sounds": [
+      {
+        "name": "mayhem:omni_roar"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.omni_eye.roar"
+  },
+  "entity.omni_eye.hurt": {
+    "sounds": [
+      {
+        "name": "mayhem:omni_hurt"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.omni_eye.hurt"
+  },
+  "entity.omni_eye.death": {
+    "sounds": [
+      {
+        "name": "mayhem:omni_death"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.omni_eye.death"
+  },
+  "entity.omni_eye.laser": {
+    "sounds": [
+      {
+        "name": "mayhem:omni_laser"
+      }
+    ],
+    "subtitle": "subtitles.mayhem.entity.omni_eye.laser"
+  },
+  "music_disc.interdimensional_jam": {
+    "sounds": [
+      {
+        "name": "mayhem:music_disc_jam",
+        "stream": true
+      }
+    ]
+  }
+}

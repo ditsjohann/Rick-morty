@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mayhem:flux_crystal"
+    }
+  },
+  "result": {
+    "id": "mayhem:flux_block",
+    "count": 1
+  }
+}

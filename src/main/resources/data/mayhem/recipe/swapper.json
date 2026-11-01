@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "EFE",
+    "FPF",
+    "EFE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "F": {
+      "item": "mayhem:flux_crystal"
+    },
+    "P": {
+      "item": "mayhem:portal_fluid"
+    }
+  },
+  "result": {
+    "id": "mayhem:swapper",
+    "count": 1
+  }
+}

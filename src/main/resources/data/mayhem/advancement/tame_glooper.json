@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "mayhem:gloop_ball",
+      "count": 1
+    },
+    "title": "Jelly Friend",
+    "description": "Tame a Glooper with a Flux Crystal",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tame": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mayhem:glooper"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tame"
+    ]
+  ],
+  "parent": "mayhem:gloopverse"
+}

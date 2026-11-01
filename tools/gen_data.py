@@ -143,10 +143,10 @@ def portal_gun_models(im):
         box([8, 11, 8.75], [9, 12, 9.5], KNOB),                  # dial knob
     ]
     display = {
-        'thirdperson_righthand': {'rotation': [0, -90, 0], 'translation': [0, 1.5, 1], 'scale': [0.9, 0.9, 0.9]},
-        'thirdperson_lefthand': {'rotation': [0, 90, 0], 'translation': [0, 1.5, 1], 'scale': [0.9, 0.9, 0.9]},
-        'firstperson_righthand': {'rotation': [0, -90, 5], 'translation': [1.5, 2.5, 0], 'scale': [0.8, 0.8, 0.8]},
-        'firstperson_lefthand': {'rotation': [0, 90, -5], 'translation': [1.5, 2.5, 0], 'scale': [0.8, 0.8, 0.8]},
+        # Third person: item +Y is the player's forward, +Z is up (see HeldItemFeatureRenderer). Left hand mirrors automatically.
+        'thirdperson_righthand': {'rotation': [0, 90, 90], 'translation': [0, 3.5, 2.5], 'scale': [0.75, 0.75, 0.75]},
+        # First person: -X points into the screen.
+        'firstperson_righthand': {'rotation': [0, 180, 0], 'translation': [0, 1.5, -1], 'scale': [0.55, 0.55, 0.55]},
         'ground': {'translation': [0, 2, 0], 'scale': [0.5, 0.5, 0.5]},
         'gui': {'rotation': [20, -135, 0], 'translation': [0.5, -1, 0], 'scale': [0.95, 0.95, 0.95]},
         'fixed': {'rotation': [0, 180, 0], 'scale': [1, 1, 1]},
@@ -155,6 +155,13 @@ def portal_gun_models(im):
     for name in ('portal_gun', 'omni_portal_gun'):
         w(os.path.join(im, name + '.json'), {'textures': {'gun': m('item/' + name), 'particle': m('item/' + name)},
                                              'elements': elements, 'display': display, 'gui_light': 'front'})
+    # Flat ray-gun sprites (barrel drawn pointing right) held like guns rather than like sticks.
+    gun_sprite_display = {
+        'thirdperson_righthand': {'rotation': [0, 90, 90], 'translation': [0, 2.5, 1.5], 'scale': [0.6, 0.6, 0.6]},
+    }
+    for name in ('plasma_blaster', 'size_ray'):
+        w(os.path.join(im, name + '.json'), {'parent': 'minecraft:item/generated', 'textures': {'layer0': m('item/' + name)},
+                                             'display': gun_sprite_display})
 
 
 def sounds():

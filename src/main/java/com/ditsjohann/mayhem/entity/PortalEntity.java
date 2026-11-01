@@ -25,7 +25,10 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Vector3f;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.UUID;
 
 /**
  * A swirling hole in reality. Anything that touches it is flung to the linked destination.
@@ -43,6 +46,10 @@ public class PortalEntity extends Entity {
     private Vec3d destPos = Vec3d.ZERO;
     private float destYaw;
     private boolean announcedArrival;
+    @Nullable
+    private UUID linked;
+    /** Entities that just arrived through this portal; ignored until they step out of it. */
+    private final Set<UUID> arrivals = new HashSet<>();
 
     public PortalEntity(EntityType<? extends PortalEntity> type, World world) {
         super(type, world);
@@ -59,6 +66,14 @@ public class PortalEntity extends Entity {
         this.destWorld = world;
         this.destPos = pos;
         this.destYaw = yaw;
+    }
+
+    public void setLinked(@Nullable UUID linked) {
+        this.linked = linked;
+    }
+
+    public void markArrival(UUID uuid) {
+        arrivals.add(uuid);
     }
 
     public int getLifetime() {
@@ -108,10 +123,16 @@ public class PortalEntity extends Entity {
 
         List<Entity> touching = world.getOtherEntities(this, getBoundingBox().contract(0.15), e ->
                 !(e instanceof PortalEntity) && !(e instanceof BlackHoleEntity) && !(e instanceof OmniEyeEntity)
-                        && !e.hasVehicle() && !e.hasPortalCooldown() && e.isAlive() && !e.isSpectator());
+                        && !e.hasVehicle() && e.isAlive() && !e.isSpectator());
+        arrivals.removeIf(uuid -> touching.stream().noneMatch(e -> e.getUuid().equals(uuid)));
         for (Entity e : touching) {
+            if (e.hasPortalCooldown() || arrivals.contains(e.getUuid())) continue;
             boolean wasPlayer = e instanceof ServerPlayerEntity;
             Entity moved = TeleportHelper.teleport(e, target, destPos, destYaw);
+            if (moved == null) continue;
+            if (linked != null && target.getEntity(linked) instanceof PortalEntity exit) {
+                exit.markArrival(moved.getUuid());
+            }
             if (moved instanceof ServerPlayerEntity player && wasPlayer) {
                 PortalEvents.onPlayerArrived(player, target);
             }
@@ -163,6 +184,7 @@ public class PortalEntity extends Entity {
         setLifetime(nbt.getInt("Lifetime"));
         setVariant(nbt.getInt("Variant"));
         this.age = nbt.getInt("PortalAge");
+        if (nbt.containsUuid("Linked")) linked = nbt.getUuid("Linked");
         if (nbt.contains("DestWorld", NbtElement.STRING_TYPE)) {
             Identifier id = Identifier.tryParse(nbt.getString("DestWorld"));
             if (id != null) destWorld = RegistryKey.of(RegistryKeys.WORLD, id);
@@ -176,6 +198,7 @@ public class PortalEntity extends Entity {
         nbt.putInt("Lifetime", getLifetime());
         nbt.putInt("Variant", getVariant());
         nbt.putInt("PortalAge", this.age);
+        if (linked != null) nbt.putUuid("Linked", linked);
         if (destWorld != null) {
             nbt.putString("DestWorld", destWorld.getValue().toString());
             nbt.putDouble("DestX", destPos.x);

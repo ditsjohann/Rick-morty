@@ -71,7 +71,7 @@ public class MultiverseMayhemClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.OMNI_EYE, ctx -> new SimpleMobRenderer<>(ctx,
                 new OmniEyeModel(ctx.getPart(OmniEyeModel.LAYER)), 1.6f,
                 e -> e.isEnraged() ? tex("omni_eye_enraged") : tex("omni_eye"),
-                e -> e.isEnraged() ? tex("omni_eye_enraged_glow") : tex("omni_eye_glow"), 1.0f));
+                e -> e.isEnraged() ? tex("omni_eye_enraged_glow") : tex("omni_eye_glow"), 1.25f));
         EntityRendererRegistry.register(ModEntities.CUSTOMS_AGENT, ctx -> {
             return new BipedEntityRenderer<CustomsAgentEntity, BipedEntityModel<CustomsAgentEntity>>(ctx,
                     new BipedEntityModel<>(ctx.getPart(CUSTOMS_AGENT_LAYER)), 0.5f) {

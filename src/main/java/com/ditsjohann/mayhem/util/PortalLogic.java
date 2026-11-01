@@ -90,6 +90,8 @@ public final class PortalLogic {
         exit.setVariant(variant);
         exit.setDestination(origin.getRegistryKey(), at, yaw + 180f);
 
+        entry.setLinked(exit.getUuid());
+        exit.setLinked(entry.getUuid());
         origin.spawnEntity(entry);
         target.world().spawnEntity(exit);
         return true;

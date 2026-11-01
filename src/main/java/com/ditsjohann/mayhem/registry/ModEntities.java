@@ -42,7 +42,7 @@ public final class ModEntities {
     public static final EntityType<ThoughtLeechEntity> THOUGHT_LEECH = register("thought_leech",
             EntityType.Builder.create(ThoughtLeechEntity::new, SpawnGroup.MONSTER).dimensions(0.5f, 0.35f).eyeHeight(0.2f).maxTrackingRange(8));
     public static final EntityType<OmniEyeEntity> OMNI_EYE = register("omni_eye",
-            EntityType.Builder.create(OmniEyeEntity::new, SpawnGroup.MONSTER).dimensions(2.6f, 2.6f).eyeHeight(1.3f).maxTrackingRange(16).makeFireImmune());
+            EntityType.Builder.create(OmniEyeEntity::new, SpawnGroup.MONSTER).dimensions(3.0f, 3.3f).eyeHeight(1.7f).maxTrackingRange(16).makeFireImmune());
 
     private static <T extends net.minecraft.entity.Entity> EntityType<T> register(String name, EntityType.Builder<T> builder) {
         return Registry.register(Registries.ENTITY_TYPE, MultiverseMayhem.id(name), builder.build(name));

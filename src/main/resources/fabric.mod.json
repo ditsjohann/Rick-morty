@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "mayhem",
+  "version": "${version}",
+  "name": "Multiverse Mayhem",
+  "description": "An interdimensional mad-science mod: portal guns, a bouncy jelly dimension, a dimension made of meat, sentient toasters, size rays, pocket black holes, interdimensional customs agents and a very large, very angry eyeball.",
+  "authors": ["ditsjohann"],
+  "contact": {
+    "sources": "https://github.com/ditsjohann/rick-morty"
+  },
+  "license": "MIT",
+  "icon": "assets/mayhem/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.ditsjohann.mayhem.MultiverseMayhem"],
+    "client": ["com.ditsjohann.mayhem.client.MultiverseMayhemClient"]
+  },
+  "accessWidener": "mayhem.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
